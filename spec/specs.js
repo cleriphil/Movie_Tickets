@@ -11,4 +11,12 @@ describe('Ticket', function() {
     var newTicket = new Ticket(false, true, 18); // false = newRelease and true = matinee
     expect(newTicket.price()).to.equal(10);
   });
+
+  it("checks age pricing", function() {
+    var youngTicket = new Ticket(false, true, 8);
+    var adultTicket = new Ticket(false, true, 18);
+    var seniorTicket = new Ticket(false, true, 88);
+    expect(youngTicket.price() < adultTicket.price());
+    expect(seniorTicket.price() < adultTicket.price());
+  });
 });
