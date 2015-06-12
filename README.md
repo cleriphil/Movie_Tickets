@@ -7,6 +7,6 @@ and the time of day of the screening.
 
 ## Setup Instructions
 - Clone project in desktop
-- Open pigLatin.html to launch browser
+- Open the HTML file to launch browser
 
 MIT License
